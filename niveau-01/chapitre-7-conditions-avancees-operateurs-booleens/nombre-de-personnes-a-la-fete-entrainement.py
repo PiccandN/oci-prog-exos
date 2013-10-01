@@ -1,4 +1,3 @@
-
 ##################################
 # fichier nombre-de-personnes-a-la-fete-entrainement.py
 # nom de l'exercice :  Nombre de personnes à la fête
@@ -17,3 +16,17 @@
 
 # mettre votre code ici
 
+nbPersonnes=int(input())
+nbMax=0
+nbActuel=0
+
+for loop in range(2*nbPersonnes):
+   situation_personne=int(input())
+   
+   if situation_personne>0:
+      nbActuel=nbActuel+1
+   else:
+      nbActuel=nbActuel-1
+   if nbActuel>nbMax:
+      nbMax=nbActuel
+print(nbMax)
