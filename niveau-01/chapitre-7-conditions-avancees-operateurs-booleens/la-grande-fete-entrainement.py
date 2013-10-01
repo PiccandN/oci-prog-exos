@@ -1,4 +1,3 @@
-
 ##################################
 # fichier la-grande-fete-entrainement.py
 # nom de l'exercice :  La grande fête
@@ -17,3 +16,18 @@
 
 # mettre votre code ici
 
+dateDebut=int(input())
+dateFin=int(input())
+nbInvites=int(input())
+nbSuspects=0
+
+for loop in range(nbInvites):
+   dateArrivee=int(input())
+   dateDepart=int(input())
+   
+   if (dateArrivee>dateFin) or (dateDepart<dateDebut):
+      nbSuspects=nbSuspects
+   else:
+      nbSuspects=nbSuspects+1
+
+print(nbSuspects)
