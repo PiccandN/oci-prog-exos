@@ -1,4 +1,3 @@
-
 ##################################
 # fichier nombre-de-jours-dans-le-mois-entrainement.py
 # nom de l'exercice :  Nombre de jours dans le mois
@@ -17,3 +16,11 @@
 
 # mettre votre code ici
 
+numero = int(input())
+if numero == 11:
+   print(29)
+else:
+   if ( (4 <= numero) and (numero <= 6) ) or (numero == 10):
+      print(31)
+   else:
+      print(30)
