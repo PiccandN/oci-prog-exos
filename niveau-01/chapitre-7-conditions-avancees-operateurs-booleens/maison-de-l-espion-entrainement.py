@@ -1,4 +1,3 @@
-
 ##################################
 # fichier maison-de-l-espion-entrainement.py
 # nom de l'exercice :  Maison de l'espion
@@ -17,3 +16,19 @@
 
 # mettre votre code ici
 
+abcissemin=int(input())
+abcissemax=int(input())
+ordonneemin=int(input())
+ordonneemax=int(input())
+nbMaisonstot=int(input())
+nbMaisons=0
+
+
+for loop in range(nbMaisonstot):
+   abcisseMaison=int(input())
+   ordonneeMaison=int(input())
+   
+   if abcisseMaison >=abcissemin and abcisseMaison <= abcissemax and ordonneeMaison >=ordonneemin and ordonneeMaison <= ordonneemax:
+      nbMaisons=nbMaisons+1
+      
+print(nbMaisons)
