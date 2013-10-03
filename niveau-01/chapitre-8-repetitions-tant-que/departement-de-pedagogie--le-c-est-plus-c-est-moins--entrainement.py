@@ -1,4 +1,3 @@
-
 ##################################
 # fichier departement-de-pedagogie--le-c-est-plus-c-est-moins--entrainement.py
 # nom de l'exercice :  Département de pédagogie : le c'est plus, c'est moins !
@@ -17,3 +16,22 @@
 
 # mettre votre code ici
 
+nbCible=int(input())
+nbEssais=0
+trouve=False
+
+while not trouve:
+   
+   nbEssais=nbEssais+1
+  
+   nbEnfant=int(input())
+   
+   if nbCible==nbEnfant:
+      trouve=True
+   if nbCible>nbEnfant:
+      print("c'est plus")
+   if nbCible<nbEnfant:
+      print("c'est moins")
+      
+print("Nombre d'essais nécessaires : ")
+print(nbEssais)
