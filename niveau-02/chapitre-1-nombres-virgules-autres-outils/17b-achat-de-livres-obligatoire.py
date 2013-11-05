@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 17b-achat-de-livres-obligatoire.py
 # nom de l'exercice : Achat de livres
@@ -17,3 +16,7 @@
 
 # mettre votre code ici
 
+sommeDispo = int(input())
+prixLivre = int(input())
+
+print(sommeDispo // prixLivre)
