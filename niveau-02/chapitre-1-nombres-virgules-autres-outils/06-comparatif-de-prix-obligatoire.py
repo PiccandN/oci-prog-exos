@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 06-comparatif-de-prix-obligatoire.py
 # nom de l'exercice : Comparatif de prix
@@ -17,3 +16,10 @@
 
 # mettre votre code ici
 
+nbLegumes = int(input())
+
+for loop in range(nbLegumes):
+   poids = float(input())
+   age = float(input())
+   prix = float(input())
+   print(prix/poids)
