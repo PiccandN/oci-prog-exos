@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 17c-une-belle-recolte-obligatoire.py
 # nom de l'exercice : Une belle récolte
@@ -17,3 +16,10 @@
 
 # mettre votre code ici
 
+nbPersonnes = int(input())
+nbFruits = int(input())
+
+if nbFruits % nbPersonnes == 0:
+   print("oui")
+else:
+   print("non")
