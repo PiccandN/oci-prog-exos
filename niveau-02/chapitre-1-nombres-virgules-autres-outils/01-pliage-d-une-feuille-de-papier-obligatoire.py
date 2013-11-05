@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 01-pliage-d-une-feuille-de-papier-obligatoire.py
 # nom de l'exercice : Pliage d'une feuille de papier
@@ -17,3 +16,4 @@
 
 # mettre votre code ici
 
+print(0.011*2**15)
