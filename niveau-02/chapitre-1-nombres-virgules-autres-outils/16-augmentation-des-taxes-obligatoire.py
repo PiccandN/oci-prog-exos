@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 16-augmentation-des-taxes-obligatoire.py
 # nom de l'exercice : Augmentation des taxes
@@ -17,3 +16,12 @@
 
 # mettre votre code ici
 
+from math import *
+
+taxeActuelle = float(input())
+taxeNouvelle = float(input())
+prixActuel = float(input())
+
+prixNouveau = ((prixActuel / (1 + taxeActuelle/100)) * (1 + taxeNouvelle/100))
+
+print(round(prixNouveau*100)/100)
