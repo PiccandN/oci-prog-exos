@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 11-course-a-trois-jambes-obligatoire.py
 # nom de l'exercice : Course à trois jambes
@@ -17,3 +16,19 @@
 
 # mettre votre code ici
 
+nbParticipants = int(input())
+entier = [0] * nbParticipants
+numParticipant = 0
+
+for loop in range(nbParticipants):
+   entier[numParticipant] = int(input())
+   numParticipant += 1
+entier.sort()
+
+petit = 0
+grand = nbParticipants -1
+
+while petit < grand:
+   print(entier[petit], entier[grand])
+   petit += 1
+   grand -= 1
