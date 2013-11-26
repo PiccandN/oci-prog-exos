@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 13-choix-des-emplacements-obligatoire.py
 # nom de l'exercice : Choix des emplacements
@@ -17,3 +16,12 @@
 
 # mettre votre code ici
 
+nbEmplacements = int(input())
+numeroEmplacement = [0] * nbEmplacements
+ 
+for idEmplacement in range(nbEmplacements):
+   marchand = int(input())
+   numeroEmplacement[marchand] = idEmplacement
+ 
+for marchand in range(nbEmplacements):
+   print(numeroEmplacement[marchand])
