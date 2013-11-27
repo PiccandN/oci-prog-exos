@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02d-priorite-alphabetique-obligatoire.py
 # nom de l'exercice : Priorité alphabétique
@@ -17,3 +16,10 @@
 
 # mettre votre code ici
 
+personne1 = input()
+personne2 = input()
+
+if personne1 < personne2:
+   print(personne1)
+elif personne2 < personne1:
+   print(personne2)
