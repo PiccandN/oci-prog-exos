@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02b-petites-fiches-et-gros-travail-obligatoire.py
 # nom de l'exercice : Petites fiches et gros travail
@@ -17,3 +16,8 @@
 
 # mettre votre code ici
 
+for loop in range(6):
+   nomAuteur = input()
+   titreLivre = input()
+   print(titreLivre)
+   print(nomAuteur)
