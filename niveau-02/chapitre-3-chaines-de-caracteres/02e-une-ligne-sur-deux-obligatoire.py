@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02e-une-ligne-sur-deux-obligatoire.py
 # nom de l'exercice : Une ligne sur deux
@@ -17,3 +16,10 @@
 
 # mettre votre code ici
 
+nbLignes = int(input())
+ligne = [0] * nbLignes
+
+for imprime in range(nbLignes):
+   ligne[imprime] = input()
+   if imprime % 2 == 0:
+      print(ligne[imprime]
