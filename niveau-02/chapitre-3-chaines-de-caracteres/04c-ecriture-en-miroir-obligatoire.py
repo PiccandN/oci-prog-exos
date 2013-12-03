@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 04c-ecriture-en-miroir-obligatoire.py
 # nom de l'exercice : Écriture en miroir
@@ -17,3 +16,14 @@
 
 # mettre votre code ici
 
+nbLignes = int(input())
+
+for loop in range(nbLignes):
+
+   ligne = input()
+   longueur = len(ligne)
+
+   for loop in range(len(ligne)):
+      print(ligne[longueur - 1], end = "")
+      longueur -= 1
+   print("")
