@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 04e-inscription-d-etudiants-obligatoire.py
 # nom de l'exercice : Inscription d’étudiants
@@ -17,3 +16,11 @@
 
 # mettre votre code ici
 
+nomEtudiant = input()
+
+if nomEtudiant[0] <= "F":
+   print(1)
+elif nomEtudiant[0] <= "P":
+   print(2)
+else:
+   print(3)
