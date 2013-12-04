@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 04f-ngms-sns-vlls-obligatoire.py
 # nom de l'exercice : ngms sns vlls
@@ -17,3 +16,9 @@
 
 # mettre votre code ici
 
+for loop in range(2):
+   titre = input()
+   for i in range(len(titre)):
+      if titre[i] != "A" and titre[i] != "E" and titre[i] != "I" and titre[i] != "O" and titre[i] != "U" and titre[i] != "Y" and titre[i] != " ":
+         print(titre[i], end = "")
+   print("")
