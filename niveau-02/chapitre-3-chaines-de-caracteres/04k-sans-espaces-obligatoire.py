@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 04k-sans-espaces-obligatoire.py
 # nom de l'exercice : Sans espaces
@@ -17,3 +16,12 @@
 
 # mettre votre code ici
 
+ligne = input()
+caracteres = list(ligne)
+
+for i in range(len(ligne)):
+   if caracteres[i] == " ":
+      caracteres[i] = "_"
+
+ligne = "".join(caracteres)
+print(ligne)
