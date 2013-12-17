@@ -21,7 +21,7 @@ cartes2 = input()
 victoire = False
 nbTours = 0
 
-if cartes1 < cartes2:
+if len(cartes1) < len(cartes2):
    longueur = len(cartes1)
 else:
    longueur = len(cartes2)
