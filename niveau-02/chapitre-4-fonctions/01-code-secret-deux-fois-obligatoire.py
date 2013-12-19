@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 01-code-secret-deux-fois-obligatoire.py
 # nom de l'exercice : Code secret deux fois
@@ -17,3 +16,15 @@
 
 # mettre votre code ici
 
+def test():
+   code = 4242
+   trouve = False
+   while trouve == False:
+      print("Entrez le code :")
+      if int(input()) == code:
+         trouve = True
+      
+test()
+print("Encore une fois.")
+test()
+print("Bravo.")
