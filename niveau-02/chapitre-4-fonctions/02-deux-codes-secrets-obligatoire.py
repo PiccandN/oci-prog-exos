@@ -1,4 +1,3 @@
-
 ##################################
 # fichier 02-deux-codes-secrets-obligatoire.py
 # nom de l'exercice : Deux codes secrets
@@ -17,3 +16,23 @@
 
 # mettre votre code ici
 
+def test1():
+   code = 4242
+   trouve = False
+   while trouve == False:
+      print("Entrez le code :")
+      if int(input()) == code:
+         trouve = True
+         
+def test2():
+   code = 2121
+   trouve = False
+   while trouve == False:
+      print("Entrez le code :")
+      if int(input()) == code:
+         trouve = True
+      
+test1()
+print("Premier code bon.")
+test2()
+print("Bravo.")
