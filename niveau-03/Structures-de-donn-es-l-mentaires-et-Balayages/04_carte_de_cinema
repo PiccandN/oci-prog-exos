@@ -1,0 +1,23 @@
+def cinema(n, cartes):
+    liste = cartes.split()
+    utilisees = {}
+
+    if len(liste) < n:
+        return "Pas assez de cartes"
+    
+    for i in liste:
+        try:
+            if utilisees[i] == 1:
+                return i
+            
+        except:
+            utilisees[i] = 1
+
+    return -1
+    
+
+n = int(input())
+cartes = str(input())
+
+
+print(cinema(n, cartes))
