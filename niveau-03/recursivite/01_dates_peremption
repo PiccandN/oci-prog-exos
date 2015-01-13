@@ -1,0 +1,20 @@
+def peremption(O):
+    for i in range(O):
+        quantite, date = map(int,input().split())
+
+        if quantite < 0:
+            for loop in range(quantite * (-1)):
+                del(pile[-1])
+
+        if quantite > 0:
+            for loop in range(quantite):
+                pile.append(date)
+
+    return min(pile)
+                
+        
+
+
+pile = []
+O = int(input())
+print(peremption(O))
