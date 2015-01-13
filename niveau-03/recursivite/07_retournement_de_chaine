@@ -1,0 +1,13 @@
+def retournement(ligne, n = -1):
+    stop = -len(ligne)
+
+    if n == stop:
+        return ligne[n]
+
+    else:
+        return "{}{}".format(ligne[n], retournement(ligne, n - 1))
+
+
+
+ligne = str(input())
+print(retournement(ligne))
