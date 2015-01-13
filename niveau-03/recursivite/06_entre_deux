@@ -1,0 +1,9 @@
+def entredeux(start, end):
+    if start == end:
+        return start
+
+    else:
+        return "{} {}".format(start, entredeux(start + 1, end))
+        
+n, m = map(int, input().split())
+print(entredeux(n, m))
