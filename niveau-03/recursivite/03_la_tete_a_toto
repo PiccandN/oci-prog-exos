@@ -1,0 +1,11 @@
+def toto(n, pattern):
+    if n != 0:
+        return toto(n-1, "({0} + {0})".format(pattern))
+
+    else:
+        return pattern
+
+
+n = int(input())
+pattern = "0"
+print("0 = " + str(toto(n, pattern)))
