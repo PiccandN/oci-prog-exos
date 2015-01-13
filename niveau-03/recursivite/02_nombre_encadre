@@ -1,0 +1,14 @@
+def encadre(nb, nbCrochets):
+
+
+    if nbCrochets > 0:
+        nb = "[{}]".format(nb)
+        nbCrochets -= 1
+        encadre(nb, nbCrochets)
+
+    else:
+        print(nb)
+
+
+nb, nbCrochets = map(int, input().split())
+encadre(nb, nbCrochets)
