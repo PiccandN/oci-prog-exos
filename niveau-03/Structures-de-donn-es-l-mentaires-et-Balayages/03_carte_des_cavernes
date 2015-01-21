@@ -10,6 +10,8 @@ def caverne(taille, carte):
             ouvert += 1
         elif i == ")":
             ferme += 1
+        if ferme > ouvert:
+            return 0
 
     if ouvert == ferme:
         return 1
