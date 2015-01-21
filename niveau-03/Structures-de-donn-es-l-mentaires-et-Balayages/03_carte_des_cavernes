@@ -1,0 +1,22 @@
+def caverne(taille, carte):
+    ouvert = 0
+    ferme = 0
+
+    if carte[0] == ")" or carte[-1] == "(":
+        return 0
+
+    for i in carte:
+        if i == "(":
+            ouvert += 1
+        elif i == ")":
+            ferme += 1
+
+    if ouvert == ferme:
+        return 1
+
+    else:
+        return 0
+
+taille = int(input())
+carte = input()
+print(caverne(taille, carte))
